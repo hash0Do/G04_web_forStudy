@@ -8,7 +8,7 @@ GitHubのリポジトリにも様々な機能(Issues, Projects, etc.)がある�
 もし不安であれば、ご自身のGitHubアカウントで作成して個人的にやってもOKです。これはあくまでもチームでアプリ開発をする際にテスト的に使えるリポジトリと思ってください。  
 
 ## よく使うGitHubコマンド
-<font color="Red">*※まずはGitをローカルにインストールください*
+<font color="Red">※まずはGitをローカルにインストールください
 </font>
 
 1.  git init
