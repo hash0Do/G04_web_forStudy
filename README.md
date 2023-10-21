@@ -10,7 +10,8 @@
 
 
 ## よく使うGitHubコマンド
-**<span style="color: Red; ">※まずはGitをローカルにインストールください</span>**  
+**<span style="color: Red; ">※まずはGitをローカルにインストールください</span>**<br>
+[Gitインストール方法](https://www.sejuku.net/blog/73444#index_id4)
 
 1.  **git init**
 
