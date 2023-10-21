@@ -98,5 +98,15 @@
 
     いよいよローカルリポジトリからリモートリポジトリに配置します。`git push`コマンドで実施します。
     ```git: git push
-    
+    $ git push
+    Enumerating objects: 16, done.
+    Counting objects: 100% (16/16), done.
+    Delta compression using up to 8 threads
+    Compressing objects: 100% (10/10), done.
+    Writing objects: 100% (13/13), 1.41 KiB | 159.00 KiB/s, done.
+    Total 13 (delta 0), reused 0 (delta 0), pack-reused 0
+    To https://github.com/hash0Do/G04_web_forStudy.git
+       aa03694..b891dbe  main -> main
     ```
+
+これ以降でエラーが出た場合は、各自で調べてみてください。分からなければSlackで！
