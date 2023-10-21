@@ -14,9 +14,8 @@
 [Gitインストール方法](https://www.sejuku.net/blog/73444#index_id4)
 <br>
 
-以下はリモートリポジトリとローカルリポジトリの連携をして、test.txtをリモートリポジトリに配置する(push)までの流れでコマンドを列挙しています。ご参考ください。
+以下はリモートリポジトリとローカルリポジトリの連携をして、test.txtをリモートリポジトリに配置する(push)までの流れでコマンドを列挙しています。ご参考ください。  
 
-<br>
 リモートリポジトリとローカルリポジトリの関係性と主要なコマンドの挙動のイメージは以下の通り。  
 
 <img width=100% height=75% src="https://www.server-memo.net/wp-content/uploads/2018/12/github_work_overview.jpg">
