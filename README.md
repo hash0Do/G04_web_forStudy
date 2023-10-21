@@ -20,7 +20,7 @@
 リモートリポジトリとローカルリポジトリの関係性と主要なコマンドの挙動のイメージは以下の通り。
 <img width=100% height=75% src="https://www.server-memo.net/wp-content/uploads/2018/12/github_work_overview.jpg">
 
-1.  <font color="red">**git clone**</font>
+1.  <font color="red">git clone</font>
 
     最初にローカルPCに、リモートリポジトリ(このリポジトリ)と連携する際に利用する。<br>
     そこで以下の`git clone`コマンドを実行する。
