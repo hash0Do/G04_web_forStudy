@@ -22,8 +22,8 @@
 
 1.  **git clone**  
 
-    最初にローカルPCに、リモートリポジトリ(このリポジトリ)と連携する際に利用する。<br>
-    そこで以下の`git clone`コマンドを実行する。
+    最初にローカルPCに、リモートリポジトリ(このリポジトリ)と連携する際に利用するコマンド。
+    ローカルの作業したいディレクトリパスに移動し、以下の`git clone`コマンドを実行する。
     ```git:git clone  
     $ git clone https://github.com/hash0Do/G04_web_forStudy.git
     Cloning into 'G04_web_forStudy'...
@@ -39,8 +39,35 @@
     $ ls -a
     ./  ../  .git/  G04_web_forStudy/
     ```
+
+2.  **git pull**
+
+    リモートリポジトリの中身をローカルリポジトリに持ってくるコマンド。以下のように`git pull`を打つだけ。
+    ```git: git pull
+    $ git pull
+    remote: Enumerating objects: 62, done.
+    remote: Counting objects: 100% (62/62), done.
+    remote: Compressing objects: 100% (40/40), done.
+    remote: Total 58 (delta 14), reused 13 (delta 0), pack-reused 0
+    Unpacking objects: 100% (58/58), 12.96 KiB | 28.00 KiB/s, done.
+    From https://github.com/hash0Do/G04_web_forStudy
+       24ca80d..b891dbe  main       -> origin/main
+    Updating 24ca80d..b891dbe
+    Fast-forward
+     README.md | 89 +++++++++++++++++++++++++++++++++++++++++++++++++++++++--------
+     test.txt  |  1 +
+     2 files changed, 79 insertions(+), 11 deletions(-)
+     create mode 100644 test.txt
+    ```
+    その後、ローカルリポジトリの中身を確認すると、リモートリポジトリに配置されたファイル等を持ってこれていることが分かる。
+    ```git:
+    $ ls -l
+    total 9
+    -rw-r--r-- 1 AzureAD+TAISEIKAMIMIZU 4096 4504 Oct 21 11:58 README.md
+    -rw-r--r-- 1 AzureAD+TAISEIKAMIMIZU 4096   14 Oct 21 11:58 test.txt
+    ```
     
-2.  **git add**  
+3.  **git add**  
 
     G04_web_forStudyフォルダに移動しtest.txtを作成する。git bashで`touch test.txt`を実行しても、エクスプローラでtext.txtを作っても問題ない。<br>
     作成された後`git add`を実行し、test.txtをステージングに移動させる。
@@ -49,7 +76,7 @@
     $ git add ./test.txt   
     ```
     
-3.  **git status**  
+4.  **git status**  
 
      addした後、作業ディレクトリ(ローカルPCのcloneしたディレクトリ)にバージョン管理対象になっているものを確認できる。  
      ```git: git status
@@ -63,7 +90,7 @@
      ```
    
 
-4.  **git commit**  
+5.  **git commit**  
 
     addしたファイルをローカルリポジトリに登録する。これで、リモートリポジトリに配置(push)するための準備ができる。
     ```git: git commit
@@ -82,7 +109,7 @@
     nothing to commit, working tree clean
     ```
 
-5.  **git log**  
+6.  **git log**  
 
     commitした情報を確認するコマンド。
     ```git: git log
@@ -94,7 +121,7 @@
       First commit    
     ```
 
-6.  **git push**  
+7.  **git push**  
 
     いよいよローカルリポジトリからリモートリポジトリに配置します。`git push`コマンドで実施します。
     ```git: git push
