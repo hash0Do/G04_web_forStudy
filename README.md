@@ -51,16 +51,16 @@
     
 3.  **git status**  
 
-   addした後、作業ディレクトリ(ローカルPCのcloneしたディレクトリ)にバージョン管理対象になっているものを確認できる。  
-   ```git: git status
-   $ git status
-   On branch main
-   Your branch is up to date with 'origin/main'.
-   
-   Changes to be committed:
-   (use "git restore --staged <file>..." to unstage)
-       new file:   test.txt
-   ```
+     addした後、作業ディレクトリ(ローカルPCのcloneしたディレクトリ)にバージョン管理対象になっているものを確認できる。  
+     ```git: git status
+     $ git status
+     On branch main
+     Your branch is up to date with 'origin/main'.
+     
+     Changes to be committed:
+     (use "git restore --staged <file>..." to unstage)
+         new file:   test.txt
+     ```
    
 
 4.  **git commit**  
