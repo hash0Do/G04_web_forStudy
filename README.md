@@ -12,10 +12,14 @@
 ## よく使うGitHubコマンド
 **<span style="color: red; ">※まずはGitをローカルにインストールください↓</span>**<br>
 [Gitインストール方法](https://www.sejuku.net/blog/73444#index_id4)
-
+<br>
+以下はリモートリポジトリとローカルリポジトリの連携をして、test.txtをリモートリポジトリに配置する(push)までの流れでコマンドを列挙しています。ご参考ください。
+<br>
 1.  **git init**
 
-    最初にローカルPCに、リモートリポジトリ(このリポジトリ)と連携するためのディレクトリを作成するのですが、そのために使うコマンド。
+    最初にローカルPCに、リモートリポジトリ(このリポジトリ)と連携するためのローカルリポジトリ(ローカルPC上)を作成するのですが、そのために使うコマンド。<br>
+    git bashを開き、リモートリポジトリを連携するためのフォルダまで移動する。<br>
+    そこで以下の`git init`コマンドを実行する。
     ```git:git init  
     $ git init
     Initialized empty Git repository in /user/documents/test/.git/
@@ -26,3 +30,6 @@
     .  ..  .git
     ```
     
+2.  **git add**
+
+    .gitが作業ディレクトリ
