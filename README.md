@@ -18,7 +18,7 @@
 
 <br>
 リモートリポジトリとローカルリポジトリの関係性と主要なコマンドの挙動のイメージは以下の通り。
-<img width="750" height="300" src="https://www.server-memo.net/wp-content/uploads/2018/12/github_work_overview.jpg">
+<img width="750" height="250" src="https://www.server-memo.net/wp-content/uploads/2018/12/github_work_overview.jpg">
 
 1.  **git clone**
 
