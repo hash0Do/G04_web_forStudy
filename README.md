@@ -42,7 +42,23 @@
     
 3.  **git add**
 
-    G04_web_forStudyフォルダに移動しtest.txtを作成する。git bashで`touch test.txt`を実行しても、エクスプローラでtext.txtを作ってもやり方は問題ない。<br>
+    G04_web_forStudyフォルダに移動しtest.txtを作成する。git bashで`touch test.txt`を実行しても、エクスプローラでtext.txtを作っても問題ない。<br>
     作成された後`git add`を実行し、test.txtをステージングに移動させる。
+    これによって、バージョン管理対象にすることができる。
+    ```git:
+    $ git add ./test.txt   
+    ```
     
+5.  **git status**
 
+   addした後、作業ディレクトリ(ローカルPCのcloneしたディレクトリ)にバージョン管理対象になっているものを確認できる。  
+   ```git: git status
+   $ git status
+   On branch main
+   Your branch is up to date with 'origin/main'.
+   
+   Changes to be committed:
+   (use "git restore --staged <file>..." to unstage)
+       new file:   test.txt
+   ```
+   
