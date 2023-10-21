@@ -20,7 +20,7 @@
 リモートリポジトリとローカルリポジトリの関係性と主要なコマンドの挙動のイメージは以下の通り。
 <img width=100% height=75% src="https://www.server-memo.net/wp-content/uploads/2018/12/github_work_overview.jpg">
 
-1.  **`rgb(9, 105, 218)`git clone**  
+1.  **git clone**  
 
     最初にローカルPCに、リモートリポジトリ(このリポジトリ)と連携する際に利用する。<br>
     そこで以下の`git clone`コマンドを実行する。
@@ -63,6 +63,40 @@
    ```
    
 
-4.  **git commit**
+4.  **git commit**  
 
+    addしたファイルをローカルリポジトリに登録する。これで、リモートリポジトリに配置(push)するための準備ができる。
+    ```git: git commit
+    $ git commit
+    [main 2e1c545] First commit
+    1 file changed, 0 insertions(+), 0 deletions(-)
+    create mode 100644 test.txt
+    ```
+    その後`git status`で正常にaddされたものが消えているか確認。
+    ```git: git status
+    $ git status
+    On branch main
+    Your branch is ahead of 'origin/main' by 2 commits.
+    (use "git push" to publish your local commits)
+
+    nothing to commit, working tree clean
+    ```
+
+5.  **git log**  
+
+    commitした情報を確認するコマンド。
+    ```git: git log
+    $ git log
+    commit 2e1c545ce3eaaff0dc68c962860ca11929e5f0d7 (HEAD -> main)
+    Author: TAISEIKAMIMIZU <tafutoji9121@gmail.com>
+    Date:   Sat Oct 21 11:15:18 2023 +0900
+
+      First commit    
+    ```
+
+6.  **git push**  
+
+    いよいよローカルリポジトリからリモートリポジトリに配置します。`git push`コマンドで実施します。
+    ```git: git push
     
+    ```
