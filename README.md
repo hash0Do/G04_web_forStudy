@@ -12,7 +12,7 @@
 ## よく使うGitHubコマンド
 **<span style="color: Red; ">※まずはGitをローカルにインストールください</span>**  
 
-1.  git init
+1.  git init  
     最初にローカルPCに、リモートリポジトリ(このリポジトリ)と連携するためのディレクトリを作成するのですが、そのために使うコマンド。
     ```git:git init  
     $ git init
