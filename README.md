@@ -20,7 +20,7 @@
 リモートリポジトリとローカルリポジトリの関係性と主要なコマンドの挙動のイメージは以下の通り。
 <img width=100% height=75% src="https://www.server-memo.net/wp-content/uploads/2018/12/github_work_overview.jpg">
 
-1.  **<font color="red">git clone</font>**
+1.  **`rgb(9, 105, 218)`git clone**  
 
     最初にローカルPCに、リモートリポジトリ(このリポジトリ)と連携する際に利用する。<br>
     そこで以下の`git clone`コマンドを実行する。
@@ -40,7 +40,7 @@
     ./  ../  .git/  G04_web_forStudy/
     ```
     
-3.  **git add**
+2.  **git add**  
 
     G04_web_forStudyフォルダに移動しtest.txtを作成する。git bashで`touch test.txt`を実行しても、エクスプローラでtext.txtを作っても問題ない。<br>
     作成された後`git add`を実行し、test.txtをステージングに移動させる。
@@ -49,7 +49,7 @@
     $ git add ./test.txt   
     ```
     
-5.  **git status**
+3.  **git status**  
 
    addした後、作業ディレクトリ(ローカルPCのcloneしたディレクトリ)にバージョン管理対象になっているものを確認できる。  
    ```git: git status
@@ -62,3 +62,7 @@
        new file:   test.txt
    ```
    
+
+4.  **git commit**
+
+    
